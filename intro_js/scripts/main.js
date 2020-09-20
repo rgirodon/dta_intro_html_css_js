@@ -4,12 +4,12 @@ myImage.onclick = function() {
 	
     var mySrc = myImage.getAttribute('src');
 	
-    if (mySrc == 'img/logo_tse.jpg') {
+    if (mySrc == 'img/logo_tse.png') {
         
-      myImage.setAttribute('src','img/logo_dta.jpg');
+      myImage.setAttribute('src','img/logo_iram.png');
 	} 
     else {
-      myImage.setAttribute('src','img/logo_tse.jpg');
+      myImage.setAttribute('src','img/logo_tse.png');
 	}
 }
 
@@ -24,7 +24,7 @@ function setUserName() {
     
     localStorage.setItem('name', myName);
   
-    myHeading.innerHTML = 'Bienvenue à la Design Tech Académie, ' + myName;
+    myHeading.innerHTML = 'Bienvenue au M1 DCIMN, ' + myName;
 }
 
 if (!localStorage.getItem('name')) {
@@ -34,7 +34,7 @@ if (!localStorage.getItem('name')) {
 else {  
     var storedName = localStorage.getItem('name');
   
-    myHeading.innerHTML = 'Bienvenue à la Design Tech Académie, ' + storedName;
+    myHeading.innerHTML = 'Bienvenue au M1 DCIMN, ' + storedName;
 }
 
 myButton.onclick = setUserName;
